@@ -18,6 +18,9 @@
 		FAB23FB52215D24300C1A033 /* BACKTO1982.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FB42215D21500C1A033 /* BACKTO1982.TTF */; };
 		FAB23FB72215E2C700C1A033 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23FB62215E2C700C1A033 /* MenuScene.swift */; };
 		FAB23FB92215ED0A00C1A033 /* EndLessBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23FB82215ED0A00C1A033 /* EndLessBackground.swift */; };
+		FAB23FC2221623E200C1A033 /* dinosaur.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FBF221623E200C1A033 /* dinosaur.wav */; };
+		FAB23FC3221623E200C1A033 /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FC0221623E200C1A033 /* hit.wav */; };
+		FAB23FC4221623E200C1A033 /* theme.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FC1221623E200C1A033 /* theme.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		FAB23FB42215D21500C1A033 /* BACKTO1982.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BACKTO1982.TTF; sourceTree = "<group>"; };
 		FAB23FB62215E2C700C1A033 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		FAB23FB82215ED0A00C1A033 /* EndLessBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndLessBackground.swift; sourceTree = "<group>"; };
+		FAB23FBF221623E200C1A033 /* dinosaur.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dinosaur.wav; sourceTree = "<group>"; };
+		FAB23FC0221623E200C1A033 /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
+		FAB23FC1221623E200C1A033 /* theme.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theme.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		FAB23F962215C3AC00C1A033 /* Jump */ = {
 			isa = PBXGroup;
 			children = (
+				FAB23FBE221623B800C1A033 /* sounds */,
 				FAB23FB32215D1D100C1A033 /* fonts */,
 				FAB23F972215C3AC00C1A033 /* AppDelegate.swift */,
 				FAB23F992215C3AC00C1A033 /* GameScene.sks */,
@@ -88,6 +95,16 @@
 				FAB23FB42215D21500C1A033 /* BACKTO1982.TTF */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		FAB23FBE221623B800C1A033 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FAB23FBF221623E200C1A033 /* dinosaur.wav */,
+				FAB23FC0221623E200C1A033 /* hit.wav */,
+				FAB23FC1221623E200C1A033 /* theme.mp3 */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +165,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB23FC3221623E200C1A033 /* hit.wav in Resources */,
 				FAB23FB52215D24300C1A033 /* BACKTO1982.TTF in Resources */,
 				FAB23FA32215C3AC00C1A033 /* Main.storyboard in Resources */,
 				FAB23F9A2215C3AC00C1A033 /* GameScene.sks in Resources */,
+				FAB23FC2221623E200C1A033 /* dinosaur.wav in Resources */,
 				FAB23FA52215C3AD00C1A033 /* Assets.xcassets in Resources */,
 				FAB23FB22215CCCB00C1A033 /* MenuScene.sks in Resources */,
 				FAB23FA82215C3AD00C1A033 /* LaunchScreen.storyboard in Resources */,
+				FAB23FC4221623E200C1A033 /* theme.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
