@@ -40,12 +40,12 @@ class EndLessBackground {
             sprite2.position.x -= speed
         
         if sprite1.position.x < -viewSize.width{
-            sprite1.position.x = viewSize.width
+            sprite1.position.x = sprite2.position.x +  viewSize.width
             
         }
         
         if sprite2.position.x < -viewSize.width{
-            sprite2.position.x = viewSize.width
+            sprite2.position.x = sprite1.position.x + viewSize.width
             
         }
         
