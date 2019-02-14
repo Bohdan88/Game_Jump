@@ -38,6 +38,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         backgroundMusic.autoplayLooped = true
         self.addChild(backgroundMusic)
         
+        let dino_move = SKAction.moveTo(x: -783, duration: 6)
+        dino.run(dino_move, withKey: "dino_run")
+        
         physicsWorld.contactDelegate = self
         
     }
@@ -56,7 +59,27 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.run(SKAction.playSoundFileNamed("hit.wav", waitForCompletion: false))
         girl.physicsBody?.applyImpulse((CGVector(dx:0, dy: 90)))
         }
-    }
+            if isOver {
+                for touch in touches {
+                    let homeButton = self.childNode(withName: "home") as! SKSpriteNode
+                    
+                    if homeButton.contains(touch.location (in: self)) {
+                        // move player to the Menu Scene
+                        
+                        
+                        if let scene = SKScene(fileNamed: "MenuScene") {
+                            // Set the scale mode to scale to fit the window
+                            scene.scaleMode = .aspectFit
+                            
+                            // Present the scene
+                            
+                            self.view?.presentScene(scene, transition: .doorsOpenVertical(withDuration: 1))
+                        }
+                    }
+                }
+            }
+        }
+    
     
     func updateDino(){
       if dino.position.x + dino.size.width < 0
@@ -69,6 +92,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let scoreLabel = self.childNode(withName: "score") as! SKLabelNode
         
         scoreLabel.text = "Score: \(score)"
+        
+        dino.removeAction(forKey: "dino_run")
+        
+        let randomTime = TimeInterval(arc4random_uniform(6) + 3)
+        let dino_move = SKAction.moveTo(x: -783, duration: randomTime)
+        dino.run(dino_move, withKey: "dino_run")
     }
         
         
@@ -92,7 +121,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ground.stop()
         forest.stop()
         sky.stop()
-  
+        showGameOver()
+    }
+    
+    func showGameOver() {
+        let gameOverLabel = self.childNode(withName: "gameover") as! SKLabelNode
+        let homeButton = self.childNode(withName: "home") as! SKSpriteNode
+        
+        gameOverLabel.position.x = (self.view?.center.x)!
+        
+        homeButton.position.x = (self.view?.center.x)!
+        
+        
     }
     
     
