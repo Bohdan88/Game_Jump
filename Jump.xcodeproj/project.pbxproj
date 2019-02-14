@@ -16,6 +16,8 @@
 		FAB23FA82215C3AD00C1A033 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FA62215C3AD00C1A033 /* LaunchScreen.storyboard */; };
 		FAB23FB22215CCCB00C1A033 /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FB12215CCCB00C1A033 /* MenuScene.sks */; };
 		FAB23FB52215D24300C1A033 /* BACKTO1982.TTF in Resources */ = {isa = PBXBuildFile; fileRef = FAB23FB42215D21500C1A033 /* BACKTO1982.TTF */; };
+		FAB23FB72215E2C700C1A033 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23FB62215E2C700C1A033 /* MenuScene.swift */; };
+		FAB23FB92215ED0A00C1A033 /* EndLessBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB23FB82215ED0A00C1A033 /* EndLessBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		FAB23FA92215C3AD00C1A033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB23FB12215CCCB00C1A033 /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 		FAB23FB42215D21500C1A033 /* BACKTO1982.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BACKTO1982.TTF; sourceTree = "<group>"; };
+		FAB23FB62215E2C700C1A033 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		FAB23FB82215ED0A00C1A033 /* EndLessBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndLessBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				FAB23FB32215D1D100C1A033 /* fonts */,
-				FAB23FB12215CCCB00C1A033 /* MenuScene.sks */,
 				FAB23F972215C3AC00C1A033 /* AppDelegate.swift */,
 				FAB23F992215C3AC00C1A033 /* GameScene.sks */,
+				FAB23FB82215ED0A00C1A033 /* EndLessBackground.swift */,
 				FAB23F9D2215C3AC00C1A033 /* GameScene.swift */,
 				FAB23F9F2215C3AC00C1A033 /* GameViewController.swift */,
+				FAB23FB12215CCCB00C1A033 /* MenuScene.sks */,
+				FAB23FB62215E2C700C1A033 /* MenuScene.swift */,
 				FAB23FA12215C3AC00C1A033 /* Main.storyboard */,
 				FAB23FA42215C3AD00C1A033 /* Assets.xcassets */,
 				FAB23FA62215C3AD00C1A033 /* LaunchScreen.storyboard */,
@@ -159,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB23F9E2215C3AC00C1A033 /* GameScene.swift in Sources */,
+				FAB23FB92215ED0A00C1A033 /* EndLessBackground.swift in Sources */,
+				FAB23FB72215E2C700C1A033 /* MenuScene.swift in Sources */,
 				FAB23FA02215C3AC00C1A033 /* GameViewController.swift in Sources */,
 				FAB23F982215C3AC00C1A033 /* AppDelegate.swift in Sources */,
 			);
